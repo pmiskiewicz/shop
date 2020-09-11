@@ -8,7 +8,7 @@ import Footer from "./Footer";
 
 function App() {
   return (
-    <Router>
+    <Router basename={process.env.PUBLIC_URL}>
       <div className="app">
         <header> {<Header />} </header>{" "}
         <main>
@@ -22,4 +22,3 @@ function App() {
 }
 
 export default App;
-
